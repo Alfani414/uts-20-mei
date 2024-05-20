@@ -99,6 +99,14 @@ public class uts {
         }
 
         // Menampilkan hasil
-        System.out.println("Hasil: " + hasil);
+            System.out.println("Apakah Anda ingin melanjutkan? (ya/tidak): ");
+            String pilihan = scanner.next();
+            if (!pilihan.equalsIgnoreCase("ya")) {
+            boolean lanjut = false;
+            }
+            System.out.println("Terima kasih telah menggunakan kalkulator. Sampai jumpa!");
+        } 
     }
-}
+      
+
+        
