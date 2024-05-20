@@ -49,6 +49,7 @@ public class uts {
         }
         // var panggilan
         String panggilan = "";
+        
         if (jenis_kelamin == 1)
         {
             panggilan = "Mas";
@@ -59,19 +60,22 @@ public class uts {
         }
 
         System.out.println("Selamat Datang:\n" + panggilan + " " + nama);
-        System.out.println("Kalkulator");
         
-        int angka1, angka2;
+        // Kalkulator
+        double angka1;
+        double angka2;
         char operator;
-        // Input data dari pengguna
-        System.out.print("Masukkan angka pertama: ");
-        angka1 = scanner.nextInt();
-        System.out.print("Masukkan operator (+, -, *, /): ");
+
+        System.out.println("Kalkulator");
+        System.out.println("Masukkan angka pertama: ");
+        angka1 = scanner.nextDouble();
+        System.out.println("Masukkan operator (+, -, *, /): ");
         operator = scanner.next().charAt(0); // Mengambil karakter pertama dari string
-        System.out.print("Masukkan angka kedua: ");
-        angka2 = scanner.nextInt();
+        System.out.println("Masukkan angka kedua: ");
+        angka2 = scanner.nextDouble();
+
         // Menghitung hasil
-        int hasil;
+        double hasil = 0;
         switch (operator) {
             case '+':
                 hasil = angka1 + angka2;
@@ -93,6 +97,7 @@ public class uts {
                 System.out.println("Operator tidak valid!");
                 return;
         }
+
         // Menampilkan hasil
         System.out.println("Hasil: " + hasil);
     }
