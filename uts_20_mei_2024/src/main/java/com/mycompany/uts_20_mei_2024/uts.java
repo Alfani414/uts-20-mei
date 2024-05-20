@@ -65,7 +65,7 @@ public class uts {
         double angka1;
         double angka2;
         char operator;
-
+        System.out.println("----------------------------------------------");
         System.out.println("Kalkulator");
         System.out.println("Masukkan angka pertama: ");
         angka1 = scanner.nextDouble();
